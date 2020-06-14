@@ -22,11 +22,11 @@
             $player = $this ->db -> query('select * from players where player_id='.$id.';');
             $location_record = $player->row();
             if (isset($location_record)) {
-            $this->db->delete('players', array('player_id' => $id));
-            return TRUE;
+            $deleteResult=$this->db->delete('players', array('player_id' => $id));
+            return $deleteResult;
             }
             else {
-                return FALSE; 
+                return "Player does not exist";
             }
         }
 
