@@ -1,0 +1,4 @@
+Tokenization - https://towardsdatascience.com/nlp-extracting-the-main-topics-from-your-dataset-using-lda-in-minutes-21486f5aa925
+
+
+ats = ['alt.atheism', 'sci.space','talk.religion.misc','comp.graphics','sci.space']

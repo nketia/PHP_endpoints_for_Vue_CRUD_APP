@@ -1,0 +1,9 @@
+xtree = et.parse("ML_Assignmen/uncompressed_data/368473newsML.xml")
+xroot = xtree.getroot()
+df_cols = ["headline", "text", "bip_topics", "date_published", "itemid"]
+rows = []
+#print (xroot.attrib.get("itemid"))
+#s_headline=xroot.find("headline").text
+for node in xroot.find("text"):
+    print (node.text)
+#print (xroot.find("text").text)

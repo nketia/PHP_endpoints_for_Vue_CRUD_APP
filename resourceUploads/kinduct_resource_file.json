@@ -1,0 +1,51 @@
+{
+"Players": [
+{
+"Name": "Joey Richard",
+"Age": 32,
+"Location": {
+"City": "Halifax",
+"Province": "NS",
+"Country": "Canada"
+}
+},
+
+{
+"Name": "Amber Wilson",
+"Age": 32,
+"Location": {
+"City": "Vancouver",
+"Province": "BC",
+"Country": "Canada"
+}
+},
+{
+"Name": "Katherine Sterling",
+"Age": 32,
+"Location": {
+"City": "Calgary",
+"Province": "Alberta",
+"Country": "Canada"
+}
+},
+{
+"Name": "Scott Brown",
+"Age": 32,
+"Location": {
+"City": "Ottawa",
+"Province": "ON",
+"Country": "Canada"
+}
+},
+
+{
+"Name": "Alfred Nketia",
+"Age": 32,
+"Location": {
+"City": "Halifax",
+"Province": "NS",
+"Country": "Canada"
+}
+}
+]
+}

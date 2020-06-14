@@ -1,0 +1,3 @@
+We need to plot fields that we believe can determine the cost for a restuarant
+But we should remove the useless fields and plot only the fields that we believe
+can provide good information gain
