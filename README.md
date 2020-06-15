@@ -23,7 +23,9 @@ kinduct_frontend2
 
 8.  Create a simple mysql database with a single table (players) and make
     player_id the primary key with autogenerate. You can also just create the
-    table in your existing DB for testing
+    table in your existing DB for testing. The table should consist of Player_ID
+    (auto generate Primary key Int), Name(Varchar), Age (Int), City(Varchar),
+    Province(Varchar), Country(Varchar)
 
 9.  You will also find a sample json file that contains players that were loaded
     for testing
