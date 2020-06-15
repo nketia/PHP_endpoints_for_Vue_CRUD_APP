@@ -1,8 +1,42 @@
 <?php  
     class Players extends CI_Model {
         public function __constructor() {
-            $dsn = 'dbdriver://root:root@localhost/cloud_group10';
-            $this -> load -> database($dsn);
+        }
+
+        public function createTable(){
+            $this->load->dbforge();
+            $fields = array(
+                'player_id' => array(
+                        'type' => 'INT',
+                        'constraint' => 5,
+                        'unsigned' => TRUE,
+                        'auto_increment' => TRUE
+                ),
+                'name' => array(
+                        'type' => 'VARCHAR',
+                        'constraint' => '45',
+                ),
+                'age' => array(
+                        'type' =>'INT',
+                        'constraint' => '5',
+                ),
+                'city' => array(
+                        'type' => 'VARCHAR',
+                        'constraint' => '45',
+                ),
+                'province' => array(
+                    'type' => 'VARCHAR',
+                    'constraint' => '45',
+               ),
+               'country' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '45',
+               ),
+            );
+            $this->dbforge->add_field($fields);
+            $this->dbforge->add_key('player_id', true);
+            $response=$this->dbforge->create_table('players');
+            return $response;
         }
 
         public function get_players() {

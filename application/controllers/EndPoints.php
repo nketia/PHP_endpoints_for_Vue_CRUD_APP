@@ -12,6 +12,11 @@ class EndPoints extends CI_Controller {
 			$this->load->helper(array('form', 'url'));
 	}
 
+	public function makeDbTable() {
+		$data=$this->players->createTable();
+		print($data);
+	}
+
 	//endpoint for all players request
 	public function getAllResources()
 	{

@@ -1,5 +1,5 @@
-kinduct_frontend2
-=================
+Application setup and running
+=============================
 
 1.  Clone the front-end repo (kinduct_AlfredNketia) into your local directory
 
@@ -13,21 +13,18 @@ kinduct_frontend2
 4.  Change the endpoints urls in the UploadResources and ViewDeleteResource to
     reflect your local directory of your codeigniter
 
-5.  Change the hostname, databse, username and password to reflect yours in the
-    database file under the config directory in your codeIgniter.
+5.  Change the hostname, database, username and password to reflect yours in the
+    database file under the application/config directory in your codeIgniter. In
+    case you don’t have an existing Mysql database, then create one. Table
+    creation is handled automatically on application load and will be created in
+    the database you supplied in the config file.
 
 6.  Start your Apache server
 
 7.  Do a npm run serve to run the app in development mode or npm run build to
     build the app for running
 
-8.  Create a simple mysql database with a single table (players) and make
-    player_id the primary key with autogenerate. You can also just create the
-    table in your existing DB for testing. The table should consist of Player_ID
-    (auto generate Primary key Int), Name(Varchar), Age (Int), City(Varchar),
-    Province(Varchar), Country(Varchar)
-
-9.  You will also find a sample json file that contains players that were loaded
+8.  You will also find a sample json file that contains players that were loaded
     for testing
 
 Some summary below
